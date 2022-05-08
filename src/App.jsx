@@ -68,9 +68,9 @@ function App() {
     setExpenses(tempExpenses);
     handleAlert({ type: "danger", text: "item delted" });
   };
-
-  setExpenses([]);
+  
   const handleClear = () => {
+    setExpenses([]);
     handleAlert({ type: "danger", text: "all items delted" });
   };
 
