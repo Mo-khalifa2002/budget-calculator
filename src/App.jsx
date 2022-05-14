@@ -115,7 +115,7 @@ function App() {
     <>
       {alert.show && <Alert text={alert.text} type={alert.type} />}
       <Alert />
-      <h1>Budget Calculator</h1>
+      {/* <h1 className="budgett">Budget Calculator</h1> */}
       <main className="App">
         <ExpenseForm
           amount={amount}
@@ -131,6 +131,8 @@ function App() {
           handleDelete={handleDelete}
         />
       </main>
+      <div className="total-spending">
+
       <h1>
         total spending:
         <span className="total">
@@ -140,6 +142,7 @@ function App() {
           }, 0)}
         </span>
       </h1>
+      </div>
     </>
   );
 }
